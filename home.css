@@ -1,0 +1,469 @@
+/* إعدادات أساسية */
+
+body {
+    margin: 0;
+    */ font-family: Poppins, Tajawal, Almarai, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0d0d27;
+    /* لون خلفية أزرق داكن */
+    color: #ffffff;
+    /* لون النص */
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    line-height: 1.6;
+}
+
+/* تنسيقات إضافية */
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav {
+    background-color: rgba(15, 23, 42, 0.7);
+    /* لون خلفية شريط التنقل أزرق غامق */
+    padding: 10px;
+    border-bottom: none;
+}
+
+.navbar-brand img {
+    height: 44px;
+    margin-left: 90px;
+    margin-right: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    /* لون النص */
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00c8ff;
+    /* لون النص عند التمرير - أزرق فاتح */
+}
+
+.navbar-nav .nav-link:focus {
+    color: #00c8ff;
+    /* لون النص عند التركيز باستخدام لوحة المفاتيح */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 200, 255, 0.5);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar .btn {
+    background-color: rgba(0, 200, 255, 0.2);
+    /* زر بلون أزرق فاتح شفاف */
+    color: #ffffff;
+    border: none;
+    padding: calc(.55rem + 1px) calc(1rem + 1px);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .btn:hover {
+    background-color: rgba(0, 200, 255, 0.4);
+    /* لون الزر عند التمرير */
+}
+
+.navbar .btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.7);
+}
+
+/* قسم البطل (الصفحة الرئيسية) */
+
+.hero {
+    height: 100vh;
+    background: url('imgs/body/background.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-content img {
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00c8ff;
+    /* لون العنوان أزرق فاتح */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero a.btn {
+    background-color: #00c8ff;
+    /* زر بلون أزرق فاتح */
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero a.btn:hover {
+    background-color: #008fb3;
+    /* لون الزر عند التمرير - أزرق داكن */
+    transform: scale(1.05);
+    /* تكبير الزر قليلاً عند التمرير */
+}
+
+.hero a.btn:active {
+    background-color: #007a99;
+    /* لون عند النقر */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* قسم عن السيرفر */
+
+#about-us {
+    background-color: #121235;
+    /* لون خلفية أزرق داكن */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about-us h1 {
+    font-size: 2.5rem;
+    color: #00c8ff;
+    /* لون العنوان أزرق فاتح */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#about-us p {
+    font-size: 1.25rem;
+    color: #a0aec0;
+    /* لون النص الفاتح */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* إضافة الصنف لتغيير لون الكلمة */
+
+.highlight {
+    color: #00c8ff;
+    /* لون كلمة برفكت نيتورك */
+}
+
+/* قسم الإحصائيات */
+
+#server-stats .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* لون خلفية شفافة */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#server-stats .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00c8ff;
+    /* لون الأرقام */
+}
+
+#server-stats .stat-label {
+    font-size: 1.1rem;
+    color: #a0aec0;
+    /* لون النص الفاتح */
+}
+
+/* تحسين الاستجابة للشاشات الصغيرة */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero a.btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+}
+
+/* تحسين الاستجابة للشاشات الصغيرة جدًا */
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero a.btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* تأثيرات إضافية */
+
+.py-10 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-danger {
+    color: #00c8ff !important;
+}
+
+.container-sm {
+    max-width: 540px;
+}
+
+.card .card-body {
+    position: relative;
+    padding: 1rem 2.25rem;
+    color: white;
+    /* لون النص أبيض */
+    background-color: #1e1e3f !important;
+    /* إجبار الخلفية أن تكون سوداء */
+    border: 2px solid #9fabbd;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(159, 171, 189, 0.5);
+}
+
+.card .card-body a {
+    text-decoration: none !important;
+    /* إزالة الخط تحت الرابط */
+    color: white !important;
+    /* لون النص أبيض */
+}
+
+.card {
+    transition: transform 0.3s ease;
+    /* إضافة تأثير انتقال ناعم */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* تحريك الكارت لأعلى عند التمرير */
+}
+
+/* إعدادات البطاقات */
+
+.character-card {
+    position: relative;
+    width: 200px;
+    height: 212px;
+    /* زيادة الارتفاع لاستيعاب النصوص */
+    margin: 10px;
+    border: 2px solid #9fabbd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #1e1e3f;
+    /* خلفية البطاقات */
+    color: #9fabbd;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(159, 171, 189, 0.5);
+}
+
+.character-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+    /* مسافة للصورة من الأعلى */
+}
+
+.card-body {
+    margin-top: 1px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.card-rank {
+    font-size: 14px;
+    color: #00c8ff;
+    /* لون النص الرئيسي */
+    margin: 5px 0;
+}
+
+.card-text {
+    font-size: 12px;
+    color: #a0aec0;
+    /* لون النص الفاتح */
+    margin: 5px 0;
+}
+
+/* تأثير التحويم على الكارت */
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.7);
+}
+
+/* إضافة البطاقات إلى تخطيط الصفحة */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    /* مسافة بين البطاقات */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+[data-bs-theme="dark"] {
+    --dt-row-hover: 255, 255, 255;
+    --dt-row-stripe: 255, 255, 255;
+    --dt-column-ordering: 255, 255, 255;
+}
+
+/* تعديل شريط التمرير (يعمل في المتصفحات المبنية على Webkit مثل Chrome, Safari) */
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* عرض الشريط */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* لون السهم مع الشفافية */
+    border-radius: 10px;
+    /* جعل الحواف مستديرة */
+    border: 3px solid #0d0d27;
+    /* إطار حول السهم */
+    transition: background-color 0.3s ease-in-out;
+    /* إضافة حركة سلسة */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 200, 255, 0.7);
+    /* لون السهم عند التمرير مع الشفافية */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0d0d27;
+    /* لون خلفية شريط التمرير */
+}
+
+.overlay .overlay-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bs-overlay-bg);
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.bg-opacity-25 {
+    background-color: rgba(var(--bs-bg-rgb-color), .25) !important;
+}
+
+.bg-dark {
+    --bs-bg-rgb-color: var(--bs-dark-rgb);
+    background-color: var(--bs-dark) !important;
+}
+
+.card-rounded {
+    border-radius: 1rem;
+}
+
+.bg-opacity-25 {
+    --bs-bg-opacity: 0.25;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+[data-bs-theme="dark"] a:not(:hover) {
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.app-blank {
+    background-color: var(--bs-app-blank-bg-color);
+}
+
+.min-h-100 {
+    min-height: 100% !important;
+}
+
+.h-auto {
+    height: auto !important;
+}
+
+.btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon):not(.btn-hover-outline) {
+    border: 0;
+    padding: calc(.775rem + 1px) calc(1.5rem + 1px);
+}

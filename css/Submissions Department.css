@@ -1,0 +1,233 @@
+body {
+    background-color: #1b1f26;
+    /* لون الخلفية الداكنة */
+    background: url('imgs/body/background.png') no-repeat center center/cover;
+    height: 100vh;
+    /* اجعل الارتفاع 100% من عرض الشاشة */
+    display: flex;
+    justify-content: center;
+    /* توسيط الكروت أفقيًا */
+    align-items: center;
+    /* توسيط الكروت عموديًا */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* خط الصفحة */
+}
+
+/* تنسيق الهيدر */
+
+.fixed-top {
+    background-color: rgba(15, 23, 42, 0.9);
+    /* لون خلفية شريط التنقل */
+    padding: 15px 20px;
+    /* إضافة padding */
+    position: fixed;
+    /* تثبيت الهيدر */
+    width: 100%;
+    /* عرض الهيدر كامل */
+    z-index: 1000;
+    /* الهيدر فوق باقي العناصر */
+    display: flex;
+    /* استخدام flexbox لتنسيق العناصر */
+    align-items: center;
+    /* محاذاة العناصر عموديًا */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل */
+    top: -1px;
+    /* تحريك الهيدر لأعلى بمقدار 1px */
+}
+
+/* تنسيق محتوى الهيدر */
+
+.header-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    /* استخدام flexbox لمحاذاة الشعار بشكل صحيح */
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    /* عرض الشعار */
+    height: auto;
+    /* الحفاظ على النسبة */
+}
+
+.page-title {
+    color: #fff;
+    /* لون نص العنوان */
+    font-size: 24px;
+    /* حجم خط العنوان */
+    margin-right: 20px;
+    /* مسافة بين الشعار والعنوان */
+}
+
+/* تنسيق الكروت */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* توزيع الكروت على 3 أعمدة */
+    gap: 20px;
+    /* مسافة بين الكروت */
+    width: 80%;
+    /* ضبط عرض الحاوية */
+    margin-top: 100px;
+    /* مسافة أعلى لتفادي الهيدر الثابت */
+}
+
+a.card {
+    background-color: #2e333a;
+    /* لون الخلفية للكارت */
+    color: #00c8ff;
+    border-radius: 15px;
+    /* زوايا دائرية */
+    padding: 20px;
+    text-decoration: none;
+    /* إزالة التسطير تحت النص */
+    transition: transform 0.3s ease;
+    /* تأثير الانتقال عند التحريك */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    /* ظل الكرت */
+}
+
+a.card:hover {
+    transform: translateY(-10px);
+    /* تحريك الكرت عند التمرير عليه */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+    /* تضخيم الظل */
+}
+
+/* تنسيق جسم الكرت */
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    /* حجم عنوان الكرت */
+}
+
+.badge {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* تخصيص لون "مغلق" في الكروت */
+
+.card-1 .badge.closed {
+    background-color: #25612a;
+    color: #cccccc;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.card-2 .badge.closed {
+    background-color: #25612a;
+    color: #cccccc;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.card-3 .badge.closed {
+    background-color: #302024;
+    color: #e42855;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.card-4 .badge.closed {
+    background-color: #302024;
+    color: #e42855;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.card-5 .badge.closed {
+    background-color: #302024;
+    color: #e42855;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.card-6 .badge.closed {
+    background-color: #302024;
+    color: #e42855;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.icon-end i {
+    font-size: 24px;
+    color: #00c8ff;
+}
+
+/* الفوتر */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f172a;
+    /* لون الخلفية */
+    padding: 15px 0;
+    /* إضافة padding أعلى وأسفل */
+    display: flex;
+    justify-content: center;
+    /* توسيط المحتوى أفقيًا */
+    align-items: center;
+    /* توسيط المحتوى عموديًا */
+    color: #fff;
+    /* لون النص */
+    font-size: 14px;
+    /* حجم النص */
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* مسافة بين العناصر */
+}
+
+.footer-logo {
+    width: 30px;
+    /* حجم الشعار */
+    height: auto;
+}
+
+.footer-text {
+    margin-right: 10px;
+    color: #c4c4c4;
+    /* لون النص الفاتح */
+}
+
+.activate-windows {
+    color: #5d9cec;
+    text-decoration: none;
+    /* إزالة التسطير تحت الرابط */
+    font-size: 12px;
+}

@@ -1,0 +1,176 @@
+/* تعديل خاص باللوجو */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* المسافة العلوية */
+}
+
+.logo-container img {
+    width: 150px;
+    /* تعديل حجم اللوجو */
+    height: auto;
+}
+
+/* باقي التنسيقات */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1c1c28, #2a2a40);
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(42, 42, 64, 0.9);
+    padding: 50px;
+    border-radius: 23px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    /* إضافة هذه الخاصية لجعل top تعمل */
+    top: -93px;
+    /* رفع العنصر بمقدار 1px */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    background-color: #3a3a55;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input-box input:focus {
+    background-color: #2f3549;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label {
+    top: -5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a56c2;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b45a0;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #4a56c2;
+}
+
+.discord-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #5865F2;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discord-btn:hover {
+    background-color: #4a56c2;
+}
+
+.discord-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.discord-btn span {
+    font-size: 14px;
+}
+
+/* تنسيق الرسالة لتظهر تحت قسم كلمة المرور */
+
+#login-password {
+    margin-bottom: 10px;
+    /* إضافة مساحة تحت حقل كلمة المرور */
+}
+
+#error-message {
+    margin-top: 10px;
+    /* إضافة مسافة من الأعلى */
+    font-size: 14px;
+    /* حجم الخط للرسالة */
+    text-align: center;
+    /* محاذاة النص في الوسط */
+}
+
+#success-message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
